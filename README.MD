@@ -19,8 +19,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from '@spi-ng2';
+// Import SPI library
+import { SpiModule } from 'spi-ng2';
 
 @NgModule({
   declarations: [
