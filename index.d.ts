@@ -10,6 +10,7 @@ export * from './service/spi-system.service';
 export * from './service/spi-notification.service';
 export * from './service/spi-processing.service';
 export * from './directive/spi-clickoutside.pipe';
+export * from './directive/spi-ocfscreen-list.directive';
 export declare class SpiModule {
     static forRoot(): ModuleWithProviders;
 }

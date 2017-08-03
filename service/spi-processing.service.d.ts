@@ -7,6 +7,6 @@ export declare class SpiProcessingService {
     private oldStyle;
     private isLoadingOpen;
     private isLoadingHiding;
-    showLoading(text?: string, delay?: number): void;
+    showLoading(text?: string, delay?: number, backDrop?: boolean): void;
     hideLoading(): void;
 }
