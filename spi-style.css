@@ -1,17 +1,16 @@
 .spi-backdrop-content{
-
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-
+    pointer-events: none;
 }
 
 .spi-backdrop-content.drop{
     background: rgba(0,0,0,.4);
-    pointer-events: auto;
+    pointer-events: auto !important;
     transition: opacity .4s
 }
 
