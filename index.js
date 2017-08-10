@@ -92,8 +92,10 @@ var SpiProcessingService = (function () {
         if (text === void 0) { text = 'Loading...'; }
         if (delay === void 0) { delay = 0; }
         if (backDrop === void 0) { backDrop = false; }
-        if (this.isLoadingOpen)
+        if (this.isLoadingOpen) {
+            this.loadingContent.innerHTML = "\n                 <svg class=\"spinner\" width=\"20px\" height=\"20px\" viewBox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <circle class=\"path\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" cx=\"33\" cy=\"33\" r=\"30\"></circle>\n                  </svg>\n                  <span style=\"position: relative; margin-left: 5px; top: -5px;\">" + text + "</span>\n                ";
             return;
+        }
         this.isLoadingHiding = false;
         this.isLoadingOpen = true;
         var /** @type {?} */ elBody = document.getElementsByTagName('body')[0];
